@@ -1,8 +1,8 @@
 from fastapi import APIRouter,Depends
-from services.user_service import register_user,login_user,delete_user
-from schemas.user import RegisterUser,LoginUser
+from backend.services.user_service import register_user,login_user,delete_user
+from backend.schemas.user import RegisterUser,LoginUser
 from sqlalchemy.orm import Session
-from core.dependencies import get_db,get_admin_required
+from backend.core.dependencies import get_db,get_admin_required
 
 
 
