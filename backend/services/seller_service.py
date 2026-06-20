@@ -1,9 +1,9 @@
 from sqlalchemy.orm import Session
-from models.user import User
-from models.seller import Seller
-from schemas.user import UserRole
+from backend.models.user import User
+from backend.models.seller import Seller
+from backend.schemas.user import UserRole
 from fastapi import HTTPException
-from core.security import get_hash_password
+from backend.core.security import get_hash_password
 
 
 def register_seller(data,db:Session):
