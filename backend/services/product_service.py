@@ -1,6 +1,6 @@
 from fastapi import HTTPException
-from models.producr import Product
-from models.seller import Seller
+from backend.models.producr import Product
+from backend.models.seller import Seller
 import os
 from sqlalchemy.orm import Session
 
