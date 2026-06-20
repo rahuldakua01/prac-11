@@ -1,0 +1,6 @@
+/* Clear default styles to avoid layout conflicts with Nykaa styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

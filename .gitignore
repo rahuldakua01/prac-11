@@ -1,0 +1,9 @@
+myenv/
+__pycache__/
+*.pyc
+.env
+.idea/
+.vscode/
+alembic/__pycache__/
+upload/
+test.db
