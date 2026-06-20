@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from core.dependencies import get_db, user_required
-from schemas.wishlist import AddToWishlist
-from services.wishlist_service import add_to_wishlist, get_wishlist_items, delete_wishlist_item
+from backend.core.dependencies import get_db, user_required
+from backend.schemas.wishlist import AddToWishlist
+from backend.services.wishlist_service import add_to_wishlist, get_wishlist_items, delete_wishlist_item
 
 router = APIRouter(prefix="/wishlist", tags=["Wishlist"])
 
