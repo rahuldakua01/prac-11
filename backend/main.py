@@ -7,11 +7,11 @@ from sqlalchemy.orm import Session
 
 import os
 
-from api.router import api_router
-from db.session import engine
-from core.dependencies import get_db
+from backend.api.router import api_router
+from backend.db.session import engine
+from backend.core.dependencies import get_db
 # from services.user_service import verify_registered_user
-from models.producr import Product
+from backend.models.producr import Product
 
 app = FastAPI(title="Rahul")
 
