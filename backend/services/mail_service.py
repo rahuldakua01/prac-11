@@ -1,6 +1,6 @@
 from fastapi import HTTPException
 from fastapi_mail import ConnectionConfig, FastMail, MessageSchema, MessageType
-from core.config import (
+from backend.core.config import (
     APP_BASE_URL,
     MAIL_FROM,
     MAIL_PASSWORD,
