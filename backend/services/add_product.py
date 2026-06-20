@@ -1,9 +1,9 @@
 from fastapi import HTTPException
-from models.producr import Product
-from models.add_product import AddProduct
-from models.producr import Product
-from schemas.add_product import AddToCart
-from models.user import User
+from backend.models.producr import Product
+from backend.models.add_product import AddProduct
+from backend.models.producr import Product
+from backend.schemas.add_product import AddToCart
+from backend.models.user import User
 
 def add_to_cart(data,current_user, db):
 
