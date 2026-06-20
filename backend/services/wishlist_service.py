@@ -1,6 +1,6 @@
 from fastapi import HTTPException
-from models.wishlist import WishlistItem
-from models.producr import Product
+from backend.models.wishlist import WishlistItem
+from backend.models.producr import Product
 from sqlalchemy.orm import Session
 
 def add_to_wishlist(data, current_user, db: Session):
