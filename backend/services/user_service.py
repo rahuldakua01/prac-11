@@ -1,11 +1,11 @@
-from schemas.user import RegisterUser,LoginUser
+from backend.schemas.user import RegisterUser,LoginUser
 from sqlalchemy.orm import Session
-from models.user import User
-from schemas.user import UserRole
+from backend.models.user import User
+from backend.schemas.user import UserRole
 from fastapi import HTTPException
-from core.security import get_hash_password,create_access_token,access_token
-from core.security import verify_password
-from services.mail_service import send_verification_email
+from backend.core.security import get_hash_password,create_access_token,access_token
+from backend.core.security import verify_password
+from backend.services.mail_service import send_verification_email
 from datetime import timedelta
 
 
